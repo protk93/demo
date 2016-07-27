@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container
+{ 
+	width:990px;
+	background-color:#CCC;
+	/*border: 1px solid #000*/;
+	margin:auto;
+}
+#bar
+{
+	height:100px;
+	width:988px;
+	border:1px solid #000;}
+#header
+{
+	height:100px;
+	width:988px;
+	border:1px solid #000;}
+#left{
+	float:left;
+	height:800px;
+	width:200px;
+	border:1px solid #000;
+	background-color:#99C;}
+#right{
+	float:right;
+	height:800px;
+	width:786px;
+	border:1px solid #000;
+	margin:auto;
+	}
+
+#footer{	
+	clear:both;
+	height:100px;
+	width:988px;
+	border:1px solid #000;}
+.img1{ width:90px;}

@@ -1,0 +1,32 @@
+<?php
+echo $this->headlink();
+?>
+<div style="width:786px; margin: 0 auto;"> 
+
+<?php 
+if($this->all==true)
+{
+	foreach($this->all as $item){?>
+    <div style="width:390px; height:150px; float:left; border:#06f thin solid">
+    <?php 
+    echo $item['tensp']."</br>";
+    echo "<a href='".HOST_PROJECT."/public/image/".$item['hinh']."' rel='gallery'  class='pirobox_gall' >
+            <img class='img1' src='".HOST_PROJECT."/public/image/".$item['hinh']."'/>
+       </a> "."<br>";
+	   echo $item['gia'];
+	   // echo $item['tennhom'];
+    ?>
+    </div>
+    
+    <?php 
+    }}
+    else
+    {
+    echo "<h1>khong co du lieu</h1>";
+    }
+?>
+
+
+
+</div>
+

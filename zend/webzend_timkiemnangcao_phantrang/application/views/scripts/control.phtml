@@ -1,0 +1,40 @@
+<?php if ($this->pageCount): ?><!-- tổng số trang -->
+<div class="paginationControl">
+  <a href="<?php echo $this->url(array('page' => $this->first));?>">First</a>
+  
+<!-- Previous page link -->
+<?php if (isset($this->previous)): ?><!-- kiểm tra tồn tại trang trc trang hiện hành -->
+
+  <a href="<?php echo $this->url(array('page' => $this->previous)); ?>"><!-- url của trình duyệt-->
+    <<
+  </a> &nbsp;|
+<?php else: ?>
+  <span class="disabled"><<</span> |
+<?php endif; ?>
+ 
+<!-- Numbered page links -->
+<?php foreach ($this->pagesInRange as $page): ?>
+  <?php if ($page != $this->current): ?>
+    <a href="<?php echo $this->url(array('page' => $page)); ?>">&nbsp;<?php echo $page; ?>&nbsp;</a> |
+  <?php else: ?>
+    <span class="selected">&nbsp;<?php echo $page; ?>&nbsp;</span> |
+  <?php endif; ?>
+<?php endforeach; ?>
+ 
+<!-- Next page link -->
+<?php if (isset($this->next)): ?>
+  <a href="<?php echo $this->url(array('page' => $this->next)); ?>">
+    >>
+  </a>
+<?php else: ?>
+  <span class="disabled">>></span>
+<?php endif; ?>
+  <a href="<?php echo $this->url(array('page' => $this->last));?>">Last</a>
+
+</div>
+
+<?php endif; 
+
+
+
+?>

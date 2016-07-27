@@ -1,0 +1,15 @@
+<ul>
+	<?php
+		if(isset($this->error))
+		{
+		foreach($this->error as $loi)
+        {
+		  echo "<li> $loi; </li>";
+		
+		}
+		}
+	?>
+</ul>
+<?php
+echo $this->form;
+?>

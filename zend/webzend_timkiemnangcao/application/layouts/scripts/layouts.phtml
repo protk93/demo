@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<?php
+echo $this->headlink();
+?>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+	</div>
+    <div id="bar">
+    <?php 
+	include("tim.php");	
+	?>
+	</div>
+	<div id="left">
+    <?php 
+	include("left.php");	
+	?>
+	</div>
+	<div id="right">
+    <?php
+	echo $this->layout()->content
+	?>
+    </div>
+    
+	<div id="footer">
+	</div>
+
+ </div>
+</body>
+</html>
